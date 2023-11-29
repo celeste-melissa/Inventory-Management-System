@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"m":"com.ims.software","l":"com.ims.software"},{"m":"com.ims.software","l":"com.ims.software.Controller"},{"m":"com.ims.software","l":"com.ims.software.Model"}];updateSearchResults();

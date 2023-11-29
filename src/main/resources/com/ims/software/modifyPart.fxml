@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ims.software.Controller.modifyPartController">
+   <children>
+      <Label fx:id="modifyPartHeader" layoutX="25.0" layoutY="44.0" prefHeight="35.0" prefWidth="130.0" text="Modify Part" textFill="#342aef">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="modifyPartInHouseButton" layoutX="200.0" layoutY="53.0" mnemonicParsing="false" onAction="#onInHouseRadioClick" text="In-House">
+         <toggleGroup>
+            <ToggleGroup fx:id="InHouseOrOutsouced" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="modifyPartOutsourceButton" layoutX="294.0" layoutY="53.0" mnemonicParsing="false" onAction="#onOutsourcedRadioClick" text="Outsourced" toggleGroup="$InHouseOrOutsouced" />
+      <Label fx:id="modifyPartID" layoutX="39.0" layoutY="120.0" text="Part ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="modifyPartName" layoutX="41.0" layoutY="184.0" prefHeight="26.0" prefWidth="84.0" text="Part Name">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="modifyPartInventoryLevel" layoutX="41.0" layoutY="236.0" prefHeight="26.0" prefWidth="110.0" text="Inventory Level">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="modifyPartPrice" layoutX="39.0" layoutY="293.0" prefHeight="26.0" prefWidth="81.0" text="Price/Cost">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="modifyMaxPart" layoutX="41.0" layoutY="354.0" text="Max">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="machineOrCompany" layoutX="43.0" layoutY="414.0" text="Machine ID">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="modifyMinPart" layoutX="260.0" layoutY="354.0" text="Min">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="modifyPartIDText" layoutX="160.0" layoutY="120.0" promptText="Enter Part ID" />
+      <TextField fx:id="modifyPartNameText" layoutX="160.0" layoutY="184.0" promptText="Enter Part Name" />
+      <TextField fx:id="modifyPartInventoryLevelText" layoutX="160.0" layoutY="236.0" promptText="Enter Inventory Level" />
+      <TextField fx:id="modifyPartPriceText" layoutX="160.0" layoutY="293.0" promptText="Enter Part Price" />
+      <TextField fx:id="modifyMaxPartText" layoutX="90.0" layoutY="354.0" promptText=" Enter Part Max Value" />
+      <TextField fx:id="modifyMinPartText" layoutX="294.0" layoutY="354.0" promptText="Enter Part Min Value" />
+      <Button fx:id="saveModifyPartButton" layoutX="284.0" layoutY="469.0" mnemonicParsing="false" onAction="#onSavePartButtonClick" text="Save" />
+      <Button fx:id="cancelModifyPartButton" layoutX="369.0" layoutY="469.0" mnemonicParsing="false" onAction="#onCancelButtonClick" text="Cancel" />
+      <TextField fx:id="machineOrCompanyText" layoutX="200.0" layoutY="414.0" prefHeight="26.0" prefWidth="210.0" promptText="Enter Machine ID or Company Name" />
+   </children>
+</AnchorPane>
